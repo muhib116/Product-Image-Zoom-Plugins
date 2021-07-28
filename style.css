@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.my_img {
+    width: 500px;
+    position: relative;
+    margin: 100px;
+}
+
+.my_img img {
+    display: block;
+    width: 100%;
+}
+
+.megnifier {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff5;
+    border: 1px solid #fff;
+    cursor: move;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Zoom</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="my_img">
+      <img
+        src="1.jpg"
+        data-src="1.jpg"
+        class="zoomThisImage"
+        alt="Image Not Found"
+      />
+    </div>
+
+    <div class="my_img">
+      <img
+        src="2.jpg"
+        data-src="2.jpg"
+        class="zoomThisImage1"
+        alt="Image Not Found"
+      />
+    </div>
+
+    <span class="preloader"></span>
+
+    <script src="app.js"></script>
+    <script>
+      new Image_zoom({
+        img: ".zoomThisImage",
+        bgColor: "#bb330011",
+        borderColor: "#bb330055",
+        megnifierSize: 100,
+        zoom: 10,
+        outputSize: 850,
+      });
+
+      new Image_zoom({
+        img: ".zoomThisImage1",
+        bgColor: "#bb330011",
+        borderColor: "#bb330055",
+        megnifierSize: 50,
+        zoom: 10,
+        outputSize: 400,
+        megnifierLoweLimit: 10,
+      });
+    </script>
+  </body>
+</html>
